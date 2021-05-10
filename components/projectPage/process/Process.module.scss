@@ -1,0 +1,57 @@
+@use '../../../styles/colors';
+@use '../../../styles/fonts';
+
+.process-container {
+    min-height: 65vh;
+    margin: 200px 288px;
+    display: flex;
+    justify-content: space-between;
+
+    .left-col {
+        display: flex;
+        flex-direction: column;
+        color: colors.$black;
+        text-align: left;
+
+        .title {
+            width: 600px;
+            color: colors.$black;
+            margin: 8px 0;
+        }
+        .subtitle {
+            width: 600px;
+            color: colors.$gray;
+            font-weight: bold;
+            margin: 8px 0;
+        }
+        p {
+            color: colors.$gray;
+            margin: 64px 0;
+        }
+    }
+
+    .processes {
+        margin: 64px 0;
+
+        h3 {
+            color: colors.$gray;
+        }
+
+        .process-item {
+            margin-bottom: 36px;
+
+            .heading {
+                font-weight: bold;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .right-col {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: 620px;
+        background-color: colors.$gray;
+    }
+}

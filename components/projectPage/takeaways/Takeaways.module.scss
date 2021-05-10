@@ -1,0 +1,40 @@
+@use '../../../styles/colors';
+@use '../../../styles/fonts';
+
+.takeaways-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 200px 288px;
+    background-color: #C5D7E0;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('/takeaways.png');
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .left-col {
+        display: flex;
+        flex-direction: column;
+        color: colors.$black;
+        text-align: left;
+        width: 600px;
+
+        .title {
+            color: colors.$black;
+            margin: 8px 0;
+        }
+        .subtitle {
+            color: colors.$gray;
+            font-weight: bold;
+            margin: 8px 0;
+        }
+        p {
+            color: colors.$gray;
+            line-height: 1.5;
+            margin: 64px 0;
+        }
+    }
+}

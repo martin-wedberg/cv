@@ -1,0 +1,33 @@
+  @font-face {
+    font-family: "Eksell Display Small";
+    src: url("/fonts/eksell/EksellDisplay-Small.ttf");
+  }
+  @font-face {
+    font-family: "Eksell Display Large";
+    src: url("/fonts/eksell/EksellDisplay-Large.ttf");
+  }
+  @font-face {
+    font-family: "Silka";
+    src: url("/fonts/silka/Silka-Bold.ttf");
+    font-style: bold;
+    font-weight: 600;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Silka";
+    src: url("/fonts/silka/Silka-Regular.ttf");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Silka";
+    src: url("/fonts/silka/Silka-RegularItalic.ttf");
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+  }
+
+  $title-large: 'Eksell Display Large';
+  $title-small: 'Eksell Display Small';
+  $bread-text: 'Silka';

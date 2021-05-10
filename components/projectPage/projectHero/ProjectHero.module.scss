@@ -1,0 +1,44 @@
+@use '../../../styles/colors';
+@use '../../../styles/fonts';
+
+.project-hero-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 0;
+    background-color: #C5D7E0;
+    background-image: url('/projectHero.png');
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .title-col {
+        position: absolute;
+        left: 80px;
+        top: 50%;
+        transform: translate(0, -50%);
+        z-index: 10;
+
+        h1 {
+            color: colors.$black;
+            margin: 0;
+        }
+        h3 {
+            color: colors.$black;
+        }
+    }
+
+    .hero-image {
+        width: 70%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+}

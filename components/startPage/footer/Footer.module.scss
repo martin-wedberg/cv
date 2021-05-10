@@ -1,0 +1,28 @@
+@use '../../../styles/colors';
+@use '../../../styles/fonts';
+
+.footer-container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    background-color: colors.$red;
+}
+
+.social-media-container {
+    margin: auto;
+}
+
+
+.social-media-icon {
+    color: colors.$white;
+    height: 72px;
+    width: auto;
+    margin: 24px;
+    transition: 200ms;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}

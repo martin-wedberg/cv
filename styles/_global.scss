@@ -1,0 +1,65 @@
+@use 'colors';
+@use 'fonts';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: fonts.$title-large;
+  font-size: 72px;
+  color: colors.$red;
+  margin: 0.2em 0;
+}
+
+h2 {
+  font-family: fonts.$title-large;
+  font-size: 60px;
+  color: colors.$red;
+  margin: 0;
+}
+
+h3 {
+  font-family: fonts.$bread-text;
+  font-weight: normal;
+  color: colors.$black;
+  margin: 0;
+}
+
+p {
+  font-family: fonts.$bread-text;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.5;
+  color: colors.$black;
+  margin: 0;
+}
+
+section {
+  scroll-snap-align: center;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.smooth-scroll {
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}

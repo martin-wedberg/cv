@@ -1,0 +1,16 @@
+@use '../../../styles/colors';
+@use '../../../styles/fonts';
+
+.projects-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 0;
+    position: relative;
+
+    .projects-grid {
+        display: flex;
+        margin: 12px 300px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

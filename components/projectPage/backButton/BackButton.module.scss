@@ -1,0 +1,36 @@
+
+.back-row {
+    position: fixed;
+    left: 80px;
+    top: 40px;
+    display: flex;
+    flex-direction: row;
+    z-index: 20px;
+    transition: 200ms;
+
+    &-invert {
+        @extend .back-row;
+        mix-blend-mode: difference;
+    }
+
+    &:hover {
+        cursor: pointer;
+        left: 68px;
+
+        .arrow-img {
+            margin-right: 24px;
+        }
+    }
+
+    .arrow-img {
+        width: 30px;
+        margin-right: 12px;
+        height: auto;
+        transition: 200ms;
+    }
+
+    h3 {
+        margin: auto;
+        letter-spacing: 2px;
+    }
+}
