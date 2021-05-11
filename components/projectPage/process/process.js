@@ -1,29 +1,23 @@
 import React from 'react'
 import styles from './Process.module.scss'
 
-export default function Process() {
+export default function Process({ title, methods, technologies }) {
     return (
         <section className={styles['process-container']}>
             <div className={styles['left-col']}>
                 <h3 className={styles['subtitle']}>THE PROCESS</h3>
-                <h2 className={styles['title']}>How was the application designed?</h2>
+                <h2 className={styles['title']}>{title}</h2>
                 <div className={styles['processes']}>
                     <div className={styles['process-item']}>
                         <h3 className={styles['heading']}>Methods</h3>
                         <ul>
-                            <li><h3>Lorem</h3></li>
-                            <li><h3>Lorem</h3></li>
-                            <li><h3>Lorem</h3></li>
-                            <li><h3>Lorem</h3></li>
+                            {methods.length > 0 && methods.map((method) => (<li><h3>{method.method}</h3></li>))}
                         </ul>
                     </div>
                     <div className={styles['process-item']}>
                         <h3 className={styles['heading']}>Technologies</h3>
                         <ul>
-                            <li><h3>Ipsum</h3></li>
-                            <li><h3>Ipsum</h3></li>
-                            <li><h3>Ipsum</h3></li>
-                            <li><h3>Ipsum</h3></li>
+                            {technologies.length > 0 && technologies.map((technology) => (<li><h3>{technology.technology}</h3></li>))}
                         </ul>
                     </div>
                 </div>

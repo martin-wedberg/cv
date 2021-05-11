@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from './Preview.module.scss'
 
-export default function Preview() {
+export default function Preview({ quote }) {
     return (
         <section className={styles['preview-container']}>
-            <h2>“Really nice quote here or something similar”</h2>
+            <h2>{quote}</h2>
             <div className={styles['dimmer']}></div>
         </section>
     )

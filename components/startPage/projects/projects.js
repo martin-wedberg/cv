@@ -16,6 +16,7 @@ export default function Projects({ projectItems }) {
                     image={p.fields.image.fields.file.url}
                     name={p.fields.name}
                     position={p.fields.position}
+                    route={p.fields.route}
                     />
                 ))
                 : null}
